@@ -1,0 +1,683 @@
+/* Background pattern from Toptal Subtle Patterns */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: roboto;
+
+}
+
+
+
+
+header img {
+
+    /* position: absolute;
+    top: 50%;
+    height: 50%;
+    transform: translate(0%, -50%); */
+    max-width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+
+}
+
+.wrapper-img {
+    background-image: url(img/crossfit-534615_640.jpg);
+    background-position: right;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.arrow {
+    position: absolute;
+    overflow: hidden;
+    top: 84%;
+    left: calc(50% - 2.5rem);
+    font-size: 2.3rem;
+    line-height: 5rem;
+    text-align: center;
+    width: 5rem;
+    background-color: rgb(83, 81, 81, 0.9);
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    color: #ffffff;
+    text-shadow: 0 -1rem 0 #ffffff, 0 -2rem 0 #ffffff;
+}
+
+.arrow .fas {
+    transform: translateY(-2.3rem);
+    animation: arrow 1s linear infinite;
+}
+
+.arrow .fas {
+    cursor: pointer;
+}
+
+.burger .fa-times,
+.burger .fa-bars,
+nav {
+    display: none;
+}
+
+.burger i.fas {
+    position: fixed;
+    z-index: 100;
+    top: 1.5rem;
+    font-size: 2.1rem;
+    right: 1.5rem;
+    transition: .4s linear;
+}
+
+.burger i.fas.show,
+nav.show {
+    display: block;
+}
+
+.burger .fas:hover {
+    cursor: pointer;
+}
+
+header q {
+    display: none;
+}
+
+
+nav {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    transition: 1s linear;
+}
+
+
+
+ul {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+
+
+}
+
+
+li {
+
+    display: flex;
+    list-style-type: none;
+    /* flex-basis: 16vh; */
+    width: 100%;
+    align-items: center;
+}
+
+li:hover {
+    background-color: none;
+}
+
+a {
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: #4f4f4f;
+    text-decoration: none;
+    border-bottom: 1px solid #5b5b5b;
+    color: darkgrey;
+    line-height: 16vh;
+    opacity: 0.9;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+section.about-me {
+    padding: 4rem 0;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+.about-me h1 {
+    font-size: 2.6rem;
+    line-height: 2.8rem;
+    margin-bottom: 5rem;
+    color: #AAAAAA;
+
+}
+
+.about-me h2 {
+    color: #191919;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    line-height: 2.2rem;
+}
+
+.reason-start {
+    color: #AAAAAA;
+    margin: 4rem;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+}
+
+.about-me h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.4rem;
+}
+
+.info {
+    line-height: 1.5rem;
+    margin-bottom: 1.6rem;
+}
+
+
+div.components-success {
+    background: url(img/tlo.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 100vh;
+    text-align: center;
+}
+
+div.components-success .magic-inscription {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+div.components-success .magic-text {
+    font-size: 3.5rem;
+    margin-right: 1.2rem;
+
+}
+
+.components-success p.fife-number {
+    color: #ffffff;
+    width: 4rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    background-color: #000000;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    line-height: 4rem;
+    text-align: center;
+}
+
+div.components-success i.fas {
+    color: #ffffff;
+    font-size: 2.2rem;
+    margin: 0;
+
+}
+
+div.components-success span {
+
+    display: block;
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-top: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+/*section offer */
+
+
+section.offer {
+
+    width: 100%;
+}
+
+p.off {
+    font-weight: 700;
+    font-size: 3.8rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 6rem 0 0;
+}
+
+.front img {
+    width: 100%;
+    height: 40vh;
+    padding: 1.5rem;
+}
+
+.front img:hover {
+    cursor: pointer;
+}
+
+.front p {
+    opacity: 0.5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    color: rgba(37, 35, 35, 0.6);
+    font-size: 1.25rem;
+    transition: 0.3s linear;
+
+}
+
+.front p.active {
+    opacity: 1;
+    color: rgb(255, 255, 255, 0.6);
+
+}
+
+
+.offer .box {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+
+}
+
+.activ-card {
+    width: 100%;
+    height: 100%;
+    margin-top: 6rem;
+    transform-style: preserve-3d;
+    transition: all .3s linear;
+}
+
+
+.box:hover>.activ-card {
+    transform: perspective(10000px) rotateY(180deg);
+    box-shadow: -5px 5px 5px #aaa;
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    backface-visibility: hidden;
+}
+
+.face.text {
+
+    transform: rotateY(180deg);
+    box-sizing: border-box;
+    line-height: 1.5rem;
+    letter-spacing: 3px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    background-color: #aaa;
+
+}
+
+.text.back {
+    padding: 1.5rem;
+
+}
+
+
+
+/*section price-list*/
+
+
+section.price-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 300vh;
+    background: url(img/tlo.png);
+    margin-top: 18vh;
+}
+
+.price-list h1 {
+    font-size: 4.5rem;
+    text-align: center;
+    padding: 5rem 0rem 3rem 0rem;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.options-list {
+    display: flex;
+    min-height: 250vh;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 90%;
+    background-color: #4f4f4f;
+}
+
+.option {
+    flex-basis: 40vh;
+    width: 90%;
+    align-self: center;
+
+}
+
+.option p:nth-child(1) {
+    border: none;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.7rem;
+}
+
+.option p:nth-last-child(1) {
+    border: none;
+}
+
+.option p {
+    padding: 3vh;
+    border-bottom: 2px dotted black;
+    font-size: 1.1rem;
+    color: azure;
+}
+
+
+/*section contact*/
+
+
+section.contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.contact-title {
+    font-weight: 700;
+    font-size: 3.8rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    padding: 6rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    width: 20rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #000000;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+}
+
+textarea {
+    margin: 1rem 0rem 2rem;
+    width: 20rem;
+    height: 12rem;
+    border: 1px solid black;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+    height: 4rem;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: roboto;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/*footer - contact*/
+
+iframe {
+    margin: 6rem 0rem 0rem;
+}
+
+footer {
+    background-color: #4f4f4f;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detailed-info {
+    display: flex;
+    align-self: center;
+    height: 10vh;
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.detailed-info .fas {
+    margin-right: 1rem;
+}
+
+.icons-contact {
+    display: flex;
+    height: 14vh;
+    justify-content: space-around;
+    align-items: flex-end;
+    font-size: 2rem;
+}
+
+.icons-contact .fab {
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s linear;
+}
+
+.icons-contact .fab:hover {
+    background-color: rgb(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+/*class to highlight that which section to be now*/
+
+.highlight {
+    background-color: #292727;
+    cursor: pointer;
+    line-height: 16vh;
+    color: #ffffff;
+
+}
+
+
+/* KEYFRAMES*/
+
+@keyframes arrow {
+    100% {
+        transform: translateY(72px);
+
+    }
+}
+
+
+/*MEDIA QUERIES*/
+
+@media (min-width: 700px) and (max-width: 1900px) {
+
+    div.components-success {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    div.components-success .magic-inscription {
+        width: 100%;
+        padding: 3rem 0 1rem;
+    }
+
+    div.components-success i.fas {
+        width: 45%;
+    }
+
+    .info {
+        padding: 1rem 4rem;
+    }
+
+    section.offer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    p.off {
+        width: 100%;
+    }
+
+    .offer .box {
+        width: 80%;
+        height: 50vh;
+    }
+
+    /* .box:hover>.activ-card {
+        transform: perspective(2000px) rotateY(180deg);
+    } */
+
+    div.options-list {
+        padding: 3rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .wrapper-img {
+        background-image: url(img/crossfit-534615_1024.jpg);
+    }
+
+    .about-me h1 {
+        font-size: 3rem;
+    }
+
+    section.about-me {
+        padding: 5rem 1rem;
+    }
+
+    .info {
+        padding: 0 10rem;
+    }
+
+    div.components-success {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    div.components-success .magic-inscription {
+        width: 100%;
+        padding: 3rem 0 1rem;
+    }
+
+    div.components-success i.fas {
+        width: 30%;
+        font-size: 2.7rem;
+    }
+
+    div.components-success span {
+        font-size: 1rem;
+    }
+
+
+    section.offer {
+        min-height: 150vh;
+    }
+
+    .offer .box {
+        width: 40%;
+        margin-bottom: 7rem;
+    }
+
+    .options-list {
+        width: 75%;
+        padding: 2rem;
+    }
+
+    .option p {
+        margin-bottom: 1.5rem;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 30rem;
+        height: 4rem;
+    }
+
+    textarea {
+        width: 30rem;
+        height: 18rem;
+    }
+}
+
+@media (min-width:1025px) {
+
+    .burger {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        z-index: 100;
+        min-height: 0;
+    }
+
+    ul {
+        flex-direction: row;
+    }
+
+    li {
+        display: flex;
+        width: 25%;
+    }
+
+    a {
+        line-height: 12vh;
+    }
+
+    .highlight {
+        line-height: 12vh;
+    }
+
+    header q {
+        display: block;
+        top: 11.5rem;
+        left: 4rem;
+        font-size: 1.1rem;
+        font-family: dancing strip;
+        font-weight: 600;
+        position: absolute;
+        color: #00000082;
+        line-height: 1.8rem;
+        max-width: 30%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .wrapper-img {
+        background-image: url(img/crossfit-534615_1366.jpg);
+    }
+
+    .about-me h2 {
+        padding: 0 7rem;
+    }
+
+    .info {
+        padding: 0 12rem;
+    }
+
+    .option p:nth-child(1) {
+        margin: 6rem 0 4rem;
+    }
+
+
+}
